@@ -37,5 +37,5 @@ stages:
         inputs:
           targetType: 'inline'
           script: |
-            $SecurePw=ConvertTo-SecureString $(PW) –asplaintext –force
+            $SecurePw=ConvertTo-SecureString $(Pw) –asplaintext –force
             Install-DBOScript -ScriptPath scripts -sqlinstance $(sqlinstance) -Database $(Database) -UserName $(UserName) -Password $($SecurePw) -SchemaVersionTable $null
