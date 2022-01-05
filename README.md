@@ -1,6 +1,6 @@
 # Azure Synapse Serverless SQL Pool Database Project
 
-Example of a Migration-Based deployment that deploys to an Azure Synapse serverless SQL Pool using Azure DevOps.
+Example of a Migration-Based deployment that deploys to an Azure Synapse serverless SQL Pool using Azure DevOps. Based on a blog post I wrote called 'CI/CD for serverless SQL pools using Azure DevOps' (https://bit.ly/3FWCHQl).
 
 It uses a YAML pipeline, which is in the AzureDevOpsTemplates folder.
 
