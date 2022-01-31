@@ -9,7 +9,10 @@
     # Note it has to exist BEFORE this the scripts are run
   # UserName - User name to connect to the Serverless SQL Pool endpoint
     # try and keep this secret
-  # Pw - Password of above user, definitely keep this one secret
+  # Pw - Password of above user, MUST be wrapped in single quotes for it to work.
+    # For example, 'SecretPW123'
+    # Definitely keep this one secret
+  
 
 trigger:
 - main
