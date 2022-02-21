@@ -2,7 +2,7 @@
 
 Example of a Migration-Based deployment that deploys to an Azure Synapse serverless SQL Pool using Azure DevOps. Based on a blog post I wrote called 'CI/CD for serverless SQL pools using Azure DevOps' (https://bit.ly/3FWCHQl).
 
-It contains an example YAML file that you can use as a YAML pipeline in Azure Pipelines. You can find it in the AzureDevOpsTemplates folder. In order to use it in Azure Pipelines you can either import or fork this repository into another GitHub repository or into Azure Repos.
+It contains an example YAML file that you can use as a YAML pipeline in Azure Pipelines. You can find it in the AzureDevOpsTemplates folder. In order to use it in Azure Pipelines you can either import or fork this repository into another GitHub repository, or into Azure Repos (https://bit.ly/3s4uO77).
 
 Afterwards, you can select the YAML file in Azure Pipelines and tailor the pipeline to suit your needs. You can find the recommended variables inside the YAML file. Avoid putting sensitive information directly into the YAML file (like your connection details). One thing I must stress here is that the password MUST be wrapped in single quotes in the secret for it to work.
 
