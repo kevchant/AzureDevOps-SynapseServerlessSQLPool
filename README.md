@@ -6,6 +6,8 @@ It contains an example YAML file that you can use as a YAML pipeline in Azure Pi
 
 Afterwards, you can select the YAML file in Azure Pipelines and tailor the pipeline to suit your needs. You can find the recommended variables inside the YAML file. Avoid putting sensitive information directly into the YAML file (like your connection details). One thing I must stress here is that the password MUST be wrapped in single quotes in the secret for it to work.
 
+You can use the logic in 'Release' feature instead by adding the tasks into the GUI and transferring the logic over. Personally, I prefer doing this using a YAML pipeline though.
+
 Please note that the databases must already exist in the serverless SQL Pool for this to work. 
 
 In addition, you might want to create a file in Azure Data Lake storage that contains the headings used for the SchemaVersions table (https://dbup.readthedocs.io/en/latest/more-info/journaling/). From there, you can try using it as the SchemaVersions table in the code to log updates.
