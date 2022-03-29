@@ -4,7 +4,9 @@ Example of a Migration-Based deployment that deploys to an Azure Synapse serverl
 
 It contains an example YAML file that you can use as a YAML pipeline in Azure Pipelines. You can find it in the AzureDevOpsTemplates folder. In order to use it in Azure Pipelines you can either import or fork this repository into another GitHub repository, or into Azure Repos (https://bit.ly/3s4uO77).
 
-Afterwards, you can select the YAML file in Azure Pipelines and tailor the pipeline to suit your needs. You can find the recommended variables inside the YAML file. Avoid putting sensitive information directly into the YAML file (like your connection details). One thing I must stress here is that the password MUST be wrapped in single quotes in the secret for it to work.
+Afterwards, you can select the YAML file in Azure Pipelines and tailor the pipeline to suit your needs. You can find a guide on how to select the YAML file whilst setting up a YAML Pipeline this in a blog post I wrote called 'Connect a Database Project in Azure Repos to Azure Pipelines' (https://bit.ly/3uF1Iv9).
+
+You can find the recommended variables inside the YAML file. Avoid putting sensitive information directly into the YAML file (like your connection details). One thing I must stress here is that the password MUST be wrapped in single quotes in the secret for it to work.
 
 You can use the logic in 'Classic Editor' instead by adding the tasks into the GUI and transferring the logic over. Alternatively, you can build an artifact for it using the 'Classic Editor' and use the 'Releases' feature for deployments. Personally, I prefer doing the deployment using a YAML pipeline.
 
