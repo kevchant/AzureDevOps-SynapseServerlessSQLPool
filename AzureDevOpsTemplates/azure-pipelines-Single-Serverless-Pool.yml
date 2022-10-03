@@ -14,9 +14,10 @@
     # Definitely keep this one secret
 
 # Optional variable groups you can use
-variables:
-- group: AzureSynapseServerlessKeyVault
-- group: AzureSynapseServerlessNonSensitive
+# Uncomment the below to use them
+# variables:
+# - group: AzureSynapseServerlessKeyVault
+# - group: AzureSynapseServerlessNonSensitive
 
 trigger:
 - main
