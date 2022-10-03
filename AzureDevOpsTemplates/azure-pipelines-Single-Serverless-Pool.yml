@@ -14,7 +14,6 @@
     # Definitely keep this one secret
 
 # Optional variable groups you can use
-# Be aware that if they do not exist Azure DevOps will kindly create them for you
 variables:
 - group: AzureSynapseServerlessKeyVault
 - group: AzureSynapseServerlessNonSensitive
